@@ -6,6 +6,7 @@
   "scripts": {
     "test": "",
     "dev": "",
-    "qa": ""
+    "qa": "",
+    "qa-55": "npx run blah blah"
   }
 }
