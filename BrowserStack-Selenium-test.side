@@ -1,0 +1,83 @@
+{
+  "id": "20ad544f-f10d-424e-9572-31cf5f99eade",
+  "version": "2.0",
+  "name": "SampleProject",
+  "url": "https://www.google.co.in",
+  "tests": [{
+    "id": "393afe6e-8842-4aa6-9af6-191d01d7a8ea",
+    "name": "BrowserStack-Selenium-test.side",
+    "commands": [{
+      "id": "be0fb3bb-4a5a-4d8c-a4cf-c76e24375824",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "415ce216-b535-47ca-a87d-9b6f0591ad92",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x820",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "063bfb50-4546-47c1-a82a-f58dc3b338a0",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "810c9e00-1da2-42de-a785-f0332a4c979d",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Browserstack"
+    }, {
+      "id": "fd9d0d12-13c8-4954-b5b7-1bdbc044ce61",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "85cd9b5d-42da-4889-b737-d5efdbad7b7b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.g:nth-child(1) > div:nth-child(2) .LC20lb",
+      "targets": [
+        ["css=.g:nth-child(1) > div:nth-child(2) .LC20lb", "css:finder"],
+        ["xpath=//div[@id='rso']/div/div/div/div/div/div/div/div/a/h3", "xpath:idRelative"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'BrowserStack: Most Reliable App & Cross Browser Testing ...')]", "xpath:innerText"]
+      ],
+      "value": "BrowserStack: Most Reliable App & Cross Browser Testing ..."
+    }]
+  }],
+  "suites": [{
+    "id": "52da4faa-6987-45bc-a781-b89453e76804",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["393afe6e-8842-4aa6-9af6-191d01d7a8ea"]
+  }],
+  "urls": ["https://www.google.co.in/"],
+  "plugins": []
+}
